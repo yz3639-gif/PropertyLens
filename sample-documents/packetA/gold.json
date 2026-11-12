@@ -1,0 +1,32 @@
+{
+ "insured": "Oak Street Holdings LLC",
+ "address": "1420 Oak Street, Mesa Verde, CA",
+ "apn": "512-034-18",
+ "occupancy": "multifamily rental",
+ "units": 12,
+ "yearBuilt": 1978,
+ "construction": "masonry",
+ "stories": 2,
+ "area": 12000,
+ "roof": "composition shingle",
+ "roofYear": null,
+ "sprinklers": "no",
+ "marketValue": 3100000,
+ "replacementCost": 2400000,
+ "insurer": "Golden Coast Mutual",
+ "policyNumber": "CP-88213",
+ "policyPeriod": "2026-07-01/2027-07-01",
+ "buildingLimit": 2000000,
+ "deductible": 25000,
+ "valuation": "RC",
+ "coinsurance": 90,
+ "mortgagee": "Harborline Lending, ISAOA/ATIMA",
+ "annualTax": 24000,
+ "installment1": 12000,
+ "installment2": 12000,
+ "lossCount": null,
+ "lossTotal": null,
+ "_conflicts": [
+  "area"
+ ]
+}

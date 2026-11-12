@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');const [,, matcherPath, outDir]=process.argv;
+const {make}=require(matcherPath);const idx=JSON.parse(fs.readFileSync(path.join(outDir,'index_full.json')));
+const M=make(idx),T=JSON.parse(fs.readFileSync(path.join(outDir,'test50.json')));
+const hav=(a,b,c,d)=>Math.round(Math.hypot((c-a)*111000,(d-b)*88000));
+const rows=T.map(t=>{const r=M.match(t.address,t.zip),p=M.plain(t.address);
+  return {...t,status:r.status,parcel:r.parcel,matchedAddress:r.matchedAddress||null,method:r.method,confirmed:r.confirmed,notes:r.notes,candidates:r.candidates,record:r.record,lat:r.lat??null,lon:r.lon??null,plain:p,filingDist:r.lat!=null?hav(t.filingLat,t.filingLon,r.lat,r.lon):null}});
+fs.writeFileSync(path.join(outDir,'bench_raw.json'),JSON.stringify(rows,null,1));
+const m=rows.filter(r=>r.status==='matched');
+console.log('matched',m.length,'review',rows.length-m.length,'plain',rows.filter(r=>r.plain).length,'plain==ours',m.filter(r=>r.plain&&r.plain===r.parcel).length,'plain!=ours',rows.filter(r=>r.plain&&r.parcel&&r.plain!==r.parcel).map(r=>r.id));
+rows.forEach(r=>console.log(String(r.id).padStart(2),(r.hard?'H ':'  ')+r.address.padEnd(34).slice(0,34),r.zip,r.status.padEnd(7),(r.matchedAddress||'').padEnd(26).slice(0,26),r.parcel||'-',r.confirmed.length,(r.filingDist??'')+'m',r.plain?'P':'-',r.notes.join(' | ').slice(0,110)));

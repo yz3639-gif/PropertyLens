@@ -1,0 +1,60 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1087 >>
+stream
+BT /F2 13 Tf 56 742 Td (LOSS RUN REPORT) Tj ET
+BT /F1 10.5 Tf 56 710 Td (Policy #) Tj ET
+BT /F1 10.5 Tf 300 710 Td (CPP-55190) Tj ET
+BT /F1 10.5 Tf 56 695 Td (Valuation date) Tj ET
+BT /F1 10.5 Tf 300 695 Td (09/30/2026) Tj ET
+BT /F1 9.5 Tf 56 670 Td (Date of loss) Tj ET
+BT /F1 9.5 Tf 150 670 Td (Claim number) Tj ET
+BT /F1 9.5 Tf 260 670 Td (Cause) Tj ET
+BT /F1 9.5 Tf 400 670 Td (Paid) Tj ET
+BT /F1 9.5 Tf 490 670 Td (Incurred) Tj ET
+BT /F1 9.5 Tf 56 656 Td (03/14/2023) Tj ET
+BT /F1 9.5 Tf 150 656 Td (CL-20931) Tj ET
+BT /F1 9.5 Tf 260 656 Td (Water damage) Tj ET
+BT /F1 9.5 Tf 400 656 Td ($11,200) Tj ET
+BT /F1 9.5 Tf 490 656 Td ($11,200) Tj ET
+BT /F1 9.5 Tf 56 642 Td (11/02/2024) Tj ET
+BT /F1 9.5 Tf 150 642 Td (CL-24418) Tj ET
+BT /F1 9.5 Tf 260 642 Td (Wind) Tj ET
+BT /F1 9.5 Tf 400 642 Td ($7,250) Tj ET
+BT /F1 9.5 Tf 490 642 Td ($7,250) Tj ET
+BT /F1 10.5 Tf 56 618 Td (Number of claims) Tj ET
+BT /F1 10.5 Tf 300 618 Td (2) Tj ET
+BT /F1 10.5 Tf 56 603 Td (Total incurred) Tj ET
+BT /F1 10.5 Tf 300 603 Td ($18,450) Tj ET
+BT /F1 10.5 Tf 56 588 Td (SYNTHETIC SAMPLE DOCUMENT.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000260 00000 n 
+0000001399 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1535
+%%EOF

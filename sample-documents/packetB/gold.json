@@ -1,0 +1,32 @@
+{
+ "insured": "Marina Way Retail LP",
+ "address": "88 Marina Way, Port Alder, CA",
+ "apn": "077-210-04",
+ "occupancy": "Neighborhood retail center",
+ "units": null,
+ "yearBuilt": 2004,
+ "construction": "steel",
+ "stories": 1,
+ "area": 28400,
+ "roof": null,
+ "roofYear": 2019,
+ "sprinklers": "yes",
+ "marketValue": 6900000,
+ "replacementCost": 5000000,
+ "insurer": "Pacific Shoreline Insurance",
+ "policyNumber": "CPP-55190",
+ "policyPeriod": "2025-10-30/2026-10-30",
+ "buildingLimit": 5200000,
+ "deductible": 50000,
+ "valuation": "RC",
+ "coinsurance": 80,
+ "mortgagee": "Harborline Lending, its successors and/or assigns",
+ "annualTax": 61200,
+ "installment1": 30600,
+ "installment2": 30600,
+ "lossCount": 2,
+ "lossTotal": 18450,
+ "_conflicts": [
+  "replacementCost"
+ ]
+}
