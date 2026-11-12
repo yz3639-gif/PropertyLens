@@ -23,12 +23,25 @@ Prototype for commercial-property underwriting review: a sourced property profil
 - **Document extraction:** 27 of 27 fields on two synthetic packets and 7 fields read correctly from one real public declarations page. This is not evidence for a 95% accuracy target; that needs real submissions with verified answers. Scanned pages are not read.
 - **Risk model:** the method is real and tested (`scripts/riskmodel.test.js`). The rates and damage curves are illustrative and not fitted to loss data, so the dollar figures are not findings.
 
+## Python version of the risk model
+
+`python/risk_model.py` is the same loss model written with numpy, so it can be run, read and extended outside the browser.
+
+```bash
+pip install -r python/requirements.txt
+python python/risk_model.py        # prints expected loss, ranges, tail measures and drivers for the four demo properties
+python python/test_risk_model.py   # 59 checks, including agreement with the web model
+```
+
+The Python and JavaScript versions use different random-number generators, so they agree statistically rather than digit for digit: expected loss within 3%, tail measures within 12%. `python/reference_js.json` holds the web model's values; refresh it with `node scripts/export_reference.js`.
+
 ## Files
 
 - `PropertyLens-standalone.html` – one file with the parcel index and PDF reader inside; open this one
 - `index.html` – the same application, loading the index and PDF reader separately
 - `parcel-index.js` – San Francisco address and parcel index, loaded on first use of live matching
 - `matcher.js`, `extractor.js`, `riskmodel.js` – the three engines as standalone modules (browser and Node)
+- `python/` – the risk model in Python (numpy) with its tests
 - `scripts/` – index build, sampling, benchmark and model tests
 - `sample-documents/` – two synthetic document packets with gold records
 

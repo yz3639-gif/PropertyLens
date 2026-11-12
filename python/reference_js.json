@@ -1,0 +1,460 @@
+{
+ "note": "Reference values from the JavaScript model in index.html (seed 206, 100,000 years). Used by test_risk_model.py.",
+ "specs": [
+  {
+   "id": "oak",
+   "name": "Oak Street Apts",
+   "tiv": 2400000,
+   "limit": 2400000,
+   "ded": 25000,
+   "eqDedPct": 10,
+   "floodLimit": 500000,
+   "floodZone": "X (unshaded)",
+   "burnProb": 0.002,
+   "f": {
+    "cons": 0.9,
+    "roof": 1,
+    "sys": 1.1,
+    "prot": 0.95,
+    "spr": 1,
+    "occ": 1.1,
+    "wf": 1.15,
+    "mit": 1,
+    "loss": 1,
+    "liq": 1.25,
+    "eqc": 1.2,
+    "ret": 1.15
+   },
+   "open": [
+    {
+     "k": "sys",
+     "label": "Electrical, plumbing, HVAC",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 1.1,
+     "hi": 1.15
+    },
+    {
+     "k": "prot",
+     "label": "Public fire protection",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 0.95,
+     "hi": 1.1
+    },
+    {
+     "k": "spr",
+     "label": "Sprinklers and alarms",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1,
+     "hi": 1
+    },
+    {
+     "k": "mit",
+     "label": "Wildfire mitigation",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1,
+     "hi": 1.15
+    },
+    {
+     "k": "loss",
+     "label": "Loss history",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 1,
+     "hi": 1.35
+    },
+    {
+     "k": "ret",
+     "label": "Retrofit status",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1.15,
+     "hi": 1.25
+    },
+    {
+     "k": "rc",
+     "label": "Current replacement cost",
+     "tiv": true,
+     "lo": 0.95,
+     "v": 1,
+     "hi": 1.18
+    },
+    {
+     "k": "area",
+     "label": "Insured building area",
+     "tiv": true,
+     "lo": 0.8333333333333334,
+     "v": 1,
+     "hi": 1
+    }
+   ]
+  },
+  {
+   "id": "harbor",
+   "name": "Harbor View Retail",
+   "tiv": 5000000,
+   "limit": 5000000,
+   "ded": 25000,
+   "eqDedPct": 10,
+   "floodLimit": 500000,
+   "floodZone": "AE",
+   "burnProb": 0.0005,
+   "f": {
+    "cons": 0.85,
+    "roof": 1.1,
+    "sys": 0.95,
+    "prot": 0.95,
+    "spr": 0.85,
+    "occ": 1.25,
+    "wf": 0.95,
+    "mit": 1,
+    "loss": 1,
+    "liq": 1,
+    "eqc": 0.8,
+    "ret": 1
+   },
+   "open": [
+    {
+     "k": "roof",
+     "label": "Roof age",
+     "tiv": false,
+     "lo": 0.92,
+     "v": 1.1,
+     "hi": 1.2
+    },
+    {
+     "k": "prot",
+     "label": "Public fire protection",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 0.95,
+     "hi": 1.1
+    },
+    {
+     "k": "mit",
+     "label": "Wildfire mitigation",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1,
+     "hi": 1.15
+    },
+    {
+     "k": "loss",
+     "label": "Loss history",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 1,
+     "hi": 1.35
+    },
+    {
+     "k": "rc",
+     "label": "Current replacement cost",
+     "tiv": true,
+     "lo": 0.95,
+     "v": 1,
+     "hi": 1.08
+    }
+   ]
+  },
+  {
+   "id": "canyon",
+   "name": "Canyon Ridge Townhomes",
+   "tiv": 2200000,
+   "limit": 2200000,
+   "ded": 25000,
+   "eqDedPct": 10,
+   "floodLimit": 500000,
+   "floodZone": "X (unshaded)",
+   "burnProb": 0.008,
+   "f": {
+    "cons": 1.15,
+    "roof": 1.1,
+    "sys": 0.95,
+    "prot": 1.15,
+    "spr": 1,
+    "occ": 1.05,
+    "wf": 1.8,
+    "mit": 1.1,
+    "loss": 1,
+    "liq": 1,
+    "eqc": 0.9,
+    "ret": 1
+   },
+   "open": [
+    {
+     "k": "roof",
+     "label": "Roof age",
+     "tiv": false,
+     "lo": 0.92,
+     "v": 1.1,
+     "hi": 1.2
+    },
+    {
+     "k": "prot",
+     "label": "Public fire protection",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 1.15,
+     "hi": 1.15
+    },
+    {
+     "k": "spr",
+     "label": "Sprinklers and alarms",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1,
+     "hi": 1
+    },
+    {
+     "k": "mit",
+     "label": "Wildfire mitigation",
+     "tiv": false,
+     "lo": 0.85,
+     "v": 1.1,
+     "hi": 1.15
+    },
+    {
+     "k": "loss",
+     "label": "Loss history",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 1,
+     "hi": 1.35
+    },
+    {
+     "k": "rc",
+     "label": "Current replacement cost",
+     "tiv": true,
+     "lo": 0.95,
+     "v": 1,
+     "hi": 1.15
+    }
+   ]
+  },
+  {
+   "id": "elm",
+   "name": "Elm Court Offices",
+   "tiv": 2500000,
+   "limit": 2500000,
+   "ded": 25000,
+   "eqDedPct": 10,
+   "floodLimit": 500000,
+   "floodZone": "X (shaded, 0.2%)",
+   "burnProb": 0.002,
+   "f": {
+    "cons": 0.88,
+    "roof": 0.92,
+    "sys": 0.95,
+    "prot": 0.95,
+    "spr": 0.85,
+    "occ": 0.9,
+    "wf": 0.95,
+    "mit": 1,
+    "loss": 0.95,
+    "liq": 1,
+    "eqc": 1,
+    "ret": 0.85
+   },
+   "open": [
+    {
+     "k": "prot",
+     "label": "Public fire protection",
+     "tiv": false,
+     "lo": 0.9,
+     "v": 0.95,
+     "hi": 1.1
+    },
+    {
+     "k": "rc",
+     "label": "Current replacement cost",
+     "tiv": true,
+     "lo": 0.95,
+     "v": 1,
+     "hi": 1.08
+    }
+   ]
+  }
+ ],
+ "js": {
+  "oak": {
+   "aal": 9104,
+   "aalGroundUp": 15596,
+   "perils": {
+    "flood": 155,
+    "fire": 1960,
+    "water": 1831,
+    "wildfire": 2733,
+    "eq": 2424
+   },
+   "simAal": 9173,
+   "pml100": 177055,
+   "pml250": 536252,
+   "tvar99": 671941,
+   "p10": 7712,
+   "p50": 8766,
+   "p90": 10036,
+   "drivers": [
+    {
+     "k": "rc",
+     "share": 0.362
+    },
+    {
+     "k": "area",
+     "share": 0.256
+    },
+    {
+     "k": "loss",
+     "share": 0.138
+    },
+    {
+     "k": "ret",
+     "share": 0.083
+    },
+    {
+     "k": "sys",
+     "share": 0.061
+    },
+    {
+     "k": "mit",
+     "share": 0.047
+    },
+    {
+     "k": "spr",
+     "share": 0.015
+    },
+    {
+     "k": "prot",
+     "share": 0.014
+    }
+   ]
+  },
+  "harbor": {
+   "aal": 15327,
+   "aalGroundUp": 30439,
+   "perils": {
+    "flood": 4612,
+    "fire": 3412,
+    "water": 4723,
+    "wildfire": 1437,
+    "eq": 1143
+   },
+   "simAal": 15189,
+   "pml100": 500000,
+   "pml250": 500000,
+   "tvar99": 815272,
+   "p10": 14991,
+   "p50": 16048,
+   "p90": 17400,
+   "drivers": [
+    {
+     "k": "loss",
+     "share": 0.685
+    },
+    {
+     "k": "rc",
+     "share": 0.169
+    },
+    {
+     "k": "roof",
+     "share": 0.077
+    },
+    {
+     "k": "prot",
+     "share": 0.011
+    },
+    {
+     "k": "mit",
+     "share": 0.01
+    }
+   ]
+  },
+  "canyon": {
+   "aal": 15591,
+   "aalGroundUp": 20176,
+   "perils": {
+    "flood": 150,
+    "fire": 2268,
+    "water": 1521,
+    "wildfire": 11004,
+    "eq": 648
+   },
+   "simAal": 16271,
+   "pml100": 500000,
+   "pml250": 1446634,
+   "tvar99": 1300360,
+   "p10": 14134,
+   "p50": 15446,
+   "p90": 16797,
+   "drivers": [
+    {
+     "k": "mit",
+     "share": 0.415
+    },
+    {
+     "k": "rc",
+     "share": 0.414
+    },
+    {
+     "k": "loss",
+     "share": 0.098
+    },
+    {
+     "k": "prot",
+     "share": 0.024
+    },
+    {
+     "k": "roof",
+     "share": 0.005
+    },
+    {
+     "k": "spr",
+     "share": 0.005
+    }
+   ]
+  },
+  "elm": {
+   "aal": 6904,
+   "aalGroundUp": 11576,
+   "perils": {
+    "flood": 789,
+    "fire": 1144,
+    "water": 1470,
+    "wildfire": 2849,
+    "eq": 652
+   },
+   "simAal": 6872,
+   "pml100": 123033,
+   "pml250": 422363,
+   "tvar99": 558209,
+   "p10": 6740,
+   "p50": 7006,
+   "p90": 7352,
+   "drivers": [
+    {
+     "k": "rc",
+     "share": 0.929
+    },
+    {
+     "k": "prot",
+     "share": 0.056
+    }
+   ]
+  }
+ },
+ "portfolio": {
+  "aal": 47504,
+  "pml100": 1323283,
+  "pml250": 1857287,
+  "tvar99": 1904914,
+  "sumStandaloneTvar": 3345782,
+  "coTvar": {
+   "oak": 337535,
+   "harbor": 389632,
+   "canyon": 886089,
+   "elm": 291659
+  }
+ }
+}

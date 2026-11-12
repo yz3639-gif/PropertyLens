@@ -1213,7 +1213,7 @@ const FLOOD_RATE=z=>/^(AE|A|V)/.test(z)?0.010:/\(shaded/.test(z)?0.002:0.0004;
 const EQ_EVENTS=[{name:'Moderate (about M6.0)',rate:1/30,dr:0.02},{name:'Strong (about M6.7)',rate:1/120,dr:0.08},{name:'Major (M7.2 or larger)',rate:1/475,dr:0.22}];
 const FIRE_WX={p:0.12,bad:4.0}; /* one year in eight is a bad fire-weather year for the whole region */
 FIRE_WX.good=(1-FIRE_WX.p*FIRE_WX.bad)/(1-FIRE_WX.p);
-const M=1024;
+const M=8192; /* points used to integrate each damage curve */
 /* unit severity samples per peril, generated once (common random numbers keep comparisons stable) */
 const SEV=(()=>{const mk=(seed,f)=>{const r=rng(seed),a=new Float64Array(M);for(let i=0;i<M;i++)a[i]=f(r);return a};
   return {flood:mk(11,r=>beta(r,1.8,5.5)),fire:mk(12,r=>r()<0.9?beta(r,1.1,22):beta(r,2,2.5)),water:mk(13,r=>beta(r,1.3,55)),wildfire:mk(14,r=>beta(r,2.2,1.6)),
