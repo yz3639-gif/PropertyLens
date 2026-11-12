@@ -4,10 +4,8 @@ Prototype for commercial-property underwriting review: a sourced property profil
 
 ## How to open it
 
-This repository is private; only invited collaborators can see it. There is no public website.
-
-- **Easiest:** download `PropertyLens-standalone.html` (about 14 MB) and double-click it. Everything is inside that one file and it works offline.
-- **Or:** clone or download the repository and open `index.html`. Keep `parcel-index.js` in the same folder; document reading needs an internet connection.
+- **In the browser:** https://yz3639-gif.github.io/PropertyLens/
+- **Offline:** download `PropertyLens-standalone.html` (about 14 MB) and double-click it. Everything is inside that one file.
 
 ## What is in the page
 
