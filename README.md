@@ -2,7 +2,12 @@
 
 Prototype for commercial-property underwriting review: a sourced property profile, follow-up questions ranked by how much they could change the answer, a readable loss model, address-to-parcel matching and document extraction.
 
-**Open it:** https://yz3639-gif.github.io/PropertyLens/
+## How to open it
+
+This repository is private; only invited collaborators can see it. There is no public website.
+
+- **Easiest:** download `PropertyLens-standalone.html` (about 14 MB) and double-click it. Everything is inside that one file and it works offline.
+- **Or:** clone or download the repository and open `index.html`. Keep `parcel-index.js` in the same folder; document reading needs an internet connection.
 
 ## What is in the page
 
@@ -22,7 +27,8 @@ Prototype for commercial-property underwriting review: a sourced property profil
 
 ## Files
 
-- `index.html` – the whole application
+- `PropertyLens-standalone.html` – one file with the parcel index and PDF reader inside; open this one
+- `index.html` – the same application, loading the index and PDF reader separately
 - `parcel-index.js` – San Francisco address and parcel index, loaded on first use of live matching
 - `matcher.js`, `extractor.js`, `riskmodel.js` – the three engines as standalone modules (browser and Node)
 - `scripts/` – index build, sampling, benchmark and model tests
